@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emergency Alarm</title>
+</head>
+<body style="text-align:center; font-family:Arial;">
+  <h1>🚨 Emergency Alarm 🚨</h1>
+  <button onclick="playAlarm()" style="padding:20px; font-size:20px; background:red; color:white; border:none; border-radius:10px;">
+    Press if in Danger
+  </button>
+
+  <audio id="alarmSound">
+    <source src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" type="audio/ogg">
+  </audio>
+
+  <script>
+    function playAlarm() {
+      document.getElementById("alarmSound").play();
+      alert("Alarm Activated! Stay Safe 🚨");
+    }
+  </script>
+</body>
+</html>
