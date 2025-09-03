@@ -5,9 +5,26 @@
 </head>
 <body style="text-align:center; font-family:Arial;">
   <h1>🚨 Emergency Alarm 🚨</h1>
-  <button onclick="playAlarm()" style="padding:20px; font-size:20px; background:red; color:white; border:none; border-radius:10px;">
+  
+  <!-- Alarm Button -->
+  <button onclick="playAlarm()" 
+          style="padding:20px; font-size:20px; background:red; color:white; border:none; border-radius:10px; margin:10px;">
     Press if in Danger
   </button>
+
+  <!-- Call Button -->
+  <a href="tel:+919876543210">
+    <button style="padding:20px; font-size:20px; background:green; color:white; border:none; border-radius:10px; margin:10px;">
+      📞 Call for Help
+    </button>
+  </a>
+
+  <!-- SMS Button -->
+  <a href="sms:+919876543210?body=I%20am%20in%20danger%20please%20help!">
+    <button style="padding:20px; font-size:20px; background:blue; color:white; border:none; border-radius:10px; margin:10px;">
+      📩 Send Emergency SMS
+    </button>
+  </a>
 
   <audio id="alarmSound">
     <source src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" type="audio/ogg">
